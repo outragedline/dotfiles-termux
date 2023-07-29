@@ -23,7 +23,7 @@ set.showmode = false
 set.signcolumn = "yes"
 set.autoread = true -- autoread files if it was changed
 set.hidden = true -- enable the option of hide a buffer without save the file
-set.clipboard = "unnamedplus" -- enable clipboard support
+--[[ set.clipboard = "unnamedplus" -- enable clipboard support ]]
 set.termguicolors = true
 set.undofile = true
 set.mouse = "a"
@@ -34,7 +34,6 @@ set.smartcase = true
 set.breakindent = true
 set.formatoptions = "l"
 -- }
-
 -- filetype {
 set.filetype = "on"
 set.filetype = "plugin"
@@ -54,11 +53,3 @@ set.writebackup = false
 set.swapfile = false
 set.backup = false
 -- }
-
---  command to autocompile packer when new plugins  are installed
-vim.cmd([[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-  augroup end
-]])
