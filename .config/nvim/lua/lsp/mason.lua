@@ -1,23 +1,18 @@
 local servers = {
 	"pyright",
-	"bashls",
 	"clangd",
-	"rust_analyzer",
 	"tsserver",
 	"html",
-	"lua_ls"
+	"cssls"
 }
 
 local debuggers = {
 	"debugpy",
-	"cpptools",
 }
 
 local null_ls = {
 	"autopep8",
-	"stylua",
 	"jq",
-	"rustfmt",
 	"prettier",
 }
 
